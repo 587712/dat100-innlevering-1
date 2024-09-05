@@ -7,7 +7,7 @@ public class o2 {
 	public static void main(String[] args) {
 		int poengsum;
 		//Legg inn og beregn poengsummer
-		for(int i = 9; i > 0; i--) {
+		for(int i = 9; i >= 0; i--) {
 			String userInput = showInputDialog("Skriv inn poengsum: "); //Input poengsum
 			poengsum = parseInt(userInput); //Verifiser poengsum
 			checkMethod(poengsum); //Kjør metode for beregning av karakter
