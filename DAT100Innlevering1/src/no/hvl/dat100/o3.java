@@ -1,16 +1,16 @@
 package no.hvl.dat100;
 
-import static java.lang.Integer.parseInt;
+import static java.lang.Long.parseLong;
 import static javax.swing.JOptionPane.showInputDialog;
 
 public class o3 {
 	public static void main(String[] args) {
 		String userInput = showInputDialog("Skriv inn eit tal over null: "); //Skriv inn heiltal over null
-		int n = parseInt(userInput); //Verifiser input
+		long n = parseLong(userInput); //Verifiser input
 		nFactorial(n); //Kjør metode for n!
 	}
-	static void nFactorial(int n) {
-		int n_ut = 1; //Output-variabel
+	static void nFactorial(long n) {
+		long n_ut = 1; //Output-variabel
 		//Verifiser gyldig input
 		if(n > 0) {
 			//Beregn n!
@@ -22,7 +22,7 @@ public class o3 {
 		//Ved ugyldig input
 		else {
 			//Skriv inn nytt tal og kjør metode
-			nFactorial(parseInt(showInputDialog("Ugyldig input, skriv inn tal over null: ")));
+			nFactorial(parseLong(showInputDialog("Ugyldig input, skriv inn tal over null: ")));
 		}
 	}
 }
